@@ -29,7 +29,6 @@ function Login() {
       if (response.ok) {
         console.log("Login Success:", data);
 
-        // JWT token save
         localStorage.setItem("token", data.token);
 
         setMessage("Login successful ✅");
